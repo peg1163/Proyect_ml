@@ -1,0 +1,13 @@
+{
+  "model_name": "grid_search_target_original",
+  "metrics": {
+    "MAE": 81404.92355976785,
+    "RMSE": 141078.5186661981,
+    "R2": 0.8683451430321333
+  },
+  "artifacts": {
+    "model": "model/artifacts/catboost_grid_search_target_original.cbm",
+    "predictions": "model/artifacts/predictions_grid_search_target_original.csv",
+    "schema": "model/artifacts/feature_schema_grid_search_target_original.json"
+  }
+}

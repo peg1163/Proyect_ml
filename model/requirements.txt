@@ -1,0 +1,8 @@
+catboost
+fastapi
+uvicorn[standard]
+numpy
+pandas
+pydantic
+scikit-learn
+google-cloud-storage

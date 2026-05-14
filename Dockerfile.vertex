@@ -1,0 +1,17 @@
+FROM python:3.12-slim
+
+ENV PYTHONUNBUFFERED=1
+ENV AIP_HTTP_PORT=8080
+
+WORKDIR /app
+
+COPY model/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+COPY model /app/model
+
+WORKDIR /app/model
+
+EXPOSE 8080
+
+CMD ["python", "serve_vertex.py"]

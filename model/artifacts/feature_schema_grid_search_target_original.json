@@ -1,0 +1,33 @@
+{
+  "target": "price",
+  "feature_columns": [
+    "sqft_living",
+    "sqft_lot",
+    "view",
+    "grade",
+    "sqft_above",
+    "zipcode",
+    "lat",
+    "long"
+  ],
+  "categorical_features": [
+    "view",
+    "grade",
+    "zipcode"
+  ],
+  "params": {
+    "iterations": 100,
+    "learning_rate": 0.05,
+    "depth": 6,
+    "l2_leaf_reg": 3,
+    "loss_function": "RMSE",
+    "eval_metric": "RMSE",
+    "random_seed": 42,
+    "verbose": 0,
+    "allow_writing_files": false
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "target_transform": "none",
+  "model_file": "catboost_grid_search_target_original.cbm"
+}
